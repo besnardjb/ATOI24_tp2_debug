@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 unsigned long long fibonacci(unsigned long long n) {
-    if (n < 0) {
-        return n;
-    } else {
+    if (n == 0) {
+        return 0;
+    } else if (n == 1) { // ajout de cette condition
+        return 1;
+       } else {
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
 }

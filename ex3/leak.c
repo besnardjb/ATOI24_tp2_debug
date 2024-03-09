@@ -26,7 +26,7 @@ int main() {
 
     for (int i = 0; i < NUM_SEGMENTS; i ++) {
         free(segments[i]);
-        segments[i++] = NULL;
+        segments[i] = NULL; // Correction ici: Suppression de l'incrementation de i
     }
 
     return 0;
